@@ -1,1 +1,7 @@
-{}
+{
+  "usingComponents": {
+    "zan-noticebar": "/component/noticebar/index",
+    "zan-row": "/component/row/index",
+    "zan-col": "/component/col/index"
+  }
+}

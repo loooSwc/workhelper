@@ -1,13 +1,58 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+ <swiper indicator-dots="true" autoplay="true" interval="3000" duration="300" circular = "true" indicator-color="rgba(255,255,255,0.5)" indicator-active-color="#fff">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" mode="aspectFit"/>
+      </swiper-item>
     </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
-</view>
+  </swiper>
+  <zan-noticebar text="这里是公告这里是公告这里是公告这里是公告这里是公告这里是公告" scrollable="{{true}}"/>
+<zan-row class="navigator">
+  <navigator url="/page/document/document?type=desc">
+    <zan-col col="6" col-class="custom-zan-col">
+      <image src="/assets/image/home.png"></image>
+      <view>考勤打卡</view>
+    </zan-col>
+  </navigator>
+  <navigator url="floor/floor">
+    <zan-col col="6" col-class="custom-zan-col">
+      <image src="/assets/image/home.png"></image>
+      <view>加班申请</view>
+    </zan-col>
+  </navigator>
+  <navigator url="/page/document/document?type=help">
+    <zan-col col="6" col-class="custom-zan-col">
+      <image src="/assets/image/home.png"></image>
+      <view>请假申请</view>
+    </zan-col>
+  </navigator>
+  <navigator url="../../page/video/video">
+    <zan-col col="6" col-class="custom-zan-col">
+      <image src="/assets/image/home.png"></image>
+      <view>巴拉巴拉申请</view>
+    </zan-col>
+  </navigator>
+  <navigator url="/page/document/document?type=desc">
+    <zan-col col="6" col-class="custom-zan-col">
+      <image src="/assets/image/home.png"></image>
+      <view>考勤打卡</view>
+    </zan-col>
+  </navigator>
+  <navigator url="floor/floor">
+    <zan-col col="6" col-class="custom-zan-col">
+      <image src="/assets/image/home.png"></image>
+      <view>加班申请</view>
+    </zan-col>
+  </navigator>
+  <navigator url="/page/document/document?type=help">
+    <zan-col col="6" col-class="custom-zan-col">
+      <image src="/assets/image/home.png"></image>
+      <view>请假申请</view>
+    </zan-col>
+  </navigator>
+  <navigator url="../../page/video/video">
+    <zan-col col="6" col-class="custom-zan-col">
+      <image src="/assets/image/home.png"></image>
+      <view>巴拉巴拉申请</view>
+    </zan-col>
+  </navigator>
+</zan-row>
