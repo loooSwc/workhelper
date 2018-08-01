@@ -1,0 +1,31 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "公众办公助手",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#8d93a1",
+    "selectedColor": "#377ae5",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "selectedIconPath": "assets/image/home.png",
+        "iconPath": "assets/image/home.png",
+        "text": "首页"
+      },{
+        "pagePath": "pages/index/index",
+        "selectedIconPath": "assets/image/home.png",
+        "iconPath": "assets/image/home.png",
+        "text": "首页"
+      }
+    ]
+  }
+}
