@@ -14,3 +14,15 @@
     </map>
   </view>
   </view>
+  <view>
+    <scorll-view scorll-y="true" class='card-content'>
+    <view>
+      <zan-cell-group title-width="90" wx:for="{{cardList}}">
+      <zan-cell  title="{{item.title}}" label="{{item.label}}" value="{{item.desc}}"></zan-cell>
+  </zan-cell-group>
+    </view>
+    </scorll-view> 
+    <view class="card-view" bindtap='enterCard'>
+      <image class="card" src='/assets/image/location.png'></image>
+    </view>
+  </view>

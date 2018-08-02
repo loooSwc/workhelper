@@ -9,3 +9,17 @@
   width: 30px;
   height: 30px;
 }
+
+.card{
+  width: 100px;
+  height: 100px;
+}
+.card-view{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.card-content{
+  height: 200px;
+  display: block;
+}
