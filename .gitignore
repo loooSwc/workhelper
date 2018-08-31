@@ -1,0 +1,17 @@
+.project
+
+.classpath
+
+target/
+
+.settings/
+
+*.class
+
+.metadata
+web
+default.xml
+
+*.iml
+
+.idea
