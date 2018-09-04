@@ -1,4 +1,4 @@
-package com.workhelper.user.configure;
+package com.workhelper.common.configure;
 
 import com.alibaba.druid.filter.Filter;
 import com.alibaba.druid.filter.logging.Slf4jLogFilter;

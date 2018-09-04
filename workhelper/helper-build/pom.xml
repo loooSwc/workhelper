@@ -12,6 +12,8 @@
         <module>../helper-user</module>
         <module>../helper-common</module>
         <module>../helper-user-intf</module>
+        <module>../helper-log</module>
+        <module>../helper-log-intf</module>
     </modules>
     <parent>
         <artifactId>all-build</artifactId>
@@ -74,6 +76,13 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>5.1.45</version>
+        </dependency>
+
+
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-feign</artifactId>
         </dependency>
     </dependencies>
 </project>
