@@ -4,6 +4,9 @@ import com.workhelper.log.service.LogService;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * \* Created with IntelliJ IDEA.
@@ -14,11 +17,5 @@ import org.springframework.transaction.annotation.Transactional;
  * \* Description:
  * \
  */
-@Transactional
-@Service
-@Primary
-public class LogServiceImpl implements LogService {
-    public void addLog(String operation) throws Exception {
-        System.out.println(operation);
-    }
+public class LogServiceImpl {
 }

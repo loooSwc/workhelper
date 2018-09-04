@@ -3,6 +3,10 @@ package com.workhelper.log.controller;
 import com.workhelper.log.service.LogService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 /**
  * \* Created with IntelliJ IDEA.
@@ -13,9 +17,12 @@ import org.springframework.stereotype.Controller;
  * \* Description:
  * \
  */
-@Controller
+@RestController
 public class LogController {
 
-    @Autowired
-    private LogService logService;
+    @RequestMapping(value = "/log")
+    public String hi()throws Exception{
+        System.out.print("调用log成功");
+        return null;
+    }
 }
