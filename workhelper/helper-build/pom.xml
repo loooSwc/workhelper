@@ -15,6 +15,7 @@
         <module>../helper-log</module>
         <module>../helper-log-intf</module>
         <module>../helper-chat</module>
+        <module>../helper-chat-intf</module>
     </modules>
     <parent>
         <artifactId>all-build</artifactId>

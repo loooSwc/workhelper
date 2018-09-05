@@ -1,31 +1,27 @@
-package com.workhelper.log;
+package com.workhelper;
+
 import com.workhelper.common.dao.jpa.RepositoryFactoryBean;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.cloud.netflix.feign.EnableFeignClients;
-import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Bean;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.web.client.RestTemplate;
 
-/**
- * \* Created with IntelliJ IDEA.
- * \* User: cxy@acmtc.com
- * \* Date: 2018/9/4
- * \* Time: 17:19
- * \* To change this template use File | Settings | File Templates.
- * \* Description:
- * \
- */
-@EntityScan("com.workhelper")
-@ComponentScan({"com.workhelper"})
 @SpringBootApplication(scanBasePackages = {"com.workhelper"})
 @EnableDiscoveryClient
-@EnableFeignClients
 @EnableJpaRepositories(repositoryFactoryBeanClass = RepositoryFactoryBean.class, basePackages = {"com.workhelper"})
-public class LogServiceApplication {
+@EnableFeignClients
+public class ChatServerApplication {
     public static void main(String[] args) {
-        SpringApplication.run(LogServiceApplication.class, args);
+        SpringApplication.run(ChatServerApplication.class, args);
+    }
+
+    @Bean
+    @LoadBalanced
+    RestTemplate restTemplate() {
+        return new RestTemplate();
     }
 }

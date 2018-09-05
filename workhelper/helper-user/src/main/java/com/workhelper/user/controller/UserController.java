@@ -20,8 +20,8 @@ public class UserController {
     RestTemplate restTemplate;
     @Autowired
     private UserService userService;
-//    @Autowired
-//    private LogService logService;
+    @Autowired
+    private LogService logService;
     @Value("${test}")
     String foo;
     @RequestMapping(value = "/user")
