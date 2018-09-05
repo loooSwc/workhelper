@@ -22,11 +22,9 @@ public class UserController {
     private UserService userService;
     @Autowired
     private LogService logService;
-    @Value("${test}")
-    String foo;
     @RequestMapping(value = "/user")
     public String hi()throws Exception{
-        System.out.print("user调用成功");
+        System.out.println("user调用成功");
         List<BaseUser> baseUser = userDao.find("from BaseUser where id=?","0eeab1c4056711e8b986525400b05776");
 //        System.out.println(baseUser.get(0).getAccount());
 //        restTemplate.getForObject("http://helper-log/log",String.class);
