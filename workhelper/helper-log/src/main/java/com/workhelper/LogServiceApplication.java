@@ -17,12 +17,10 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
  * \* Description:
  * \
  */
-@EntityScan("com.workhelper")
-@ComponentScan({"com.workhelper"})
 @SpringBootApplication(scanBasePackages = {"com.workhelper"})
 @EnableDiscoveryClient
-@EnableFeignClients
 @EnableJpaRepositories(repositoryFactoryBeanClass = RepositoryFactoryBean.class, basePackages = {"com.workhelper"})
+@EnableFeignClients
 public class LogServiceApplication {
     public static void main(String[] args) {
         SpringApplication.run(LogServiceApplication.class, args);

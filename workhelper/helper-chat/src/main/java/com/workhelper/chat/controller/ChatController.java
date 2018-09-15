@@ -1,7 +1,7 @@
 package com.workhelper.chat.controller;
 
 import com.workhelper.chat.service.ChatService;
-import com.workhelper.user.model.com.workhelper.user.service.UserService;
+import com.workhelper.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

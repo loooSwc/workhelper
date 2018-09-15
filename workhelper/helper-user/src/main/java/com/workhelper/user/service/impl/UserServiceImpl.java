@@ -1,15 +1,12 @@
 package com.workhelper.user.service.impl;
 
-import com.workhelper.user.model.com.workhelper.user.service.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Primary;
+import com.workhelper.user.service.UserService;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.client.RestTemplate;
 
 @RestController
-@Service
+@Service("userServiceImpl")
 public class UserServiceImpl implements UserService {
 
     @Override

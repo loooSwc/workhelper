@@ -1,14 +1,10 @@
 package com.workhelper.log.controller;
 
-import com.workhelper.log.service.LogService;
-import com.workhelper.user.model.com.workhelper.user.service.UserService;
+import com.workhelper.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.List;
 
 /**
  * \* Created with IntelliJ IDEA.
