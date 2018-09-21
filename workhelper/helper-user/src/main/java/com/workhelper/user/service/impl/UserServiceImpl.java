@@ -13,6 +13,7 @@ import javax.transaction.Transactional;
 @RestController
 @Service
 @Transactional
+@Service("userServiceImpl")
 public class UserServiceImpl implements UserService {
     @Autowired
     private UserDao userDao;

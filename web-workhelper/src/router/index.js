@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import Root from '@/components/Root'
 
 Vue.use(Router)
 const login = r => require.ensure([], () => r(require('../pages/test/test.js')), 'test')
@@ -9,7 +9,7 @@ export default new Router({
     {
       path: '/',
       name: 'HelloWorld',
-      component: HelloWorld
+      component: Root
     },
     {
       path: '/test',
