@@ -3,13 +3,11 @@ package com.workhelper.user.controller;
 import com.workhelper.user.dao.UserDao;
 import com.workhelper.user.model.BaseUser;
 import com.workhelper.log.service.LogService;
-import com.workhelper.user.model.com.workhelper.user.service.UserService;
+import com.workhelper.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.List;

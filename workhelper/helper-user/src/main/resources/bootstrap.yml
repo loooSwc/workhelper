@@ -5,5 +5,6 @@ spring:
     config:
       label: master
       profile: dev
-      uri: http://localhost:8001/
+      uri: http://47.104.111.123:8001/
+
 
