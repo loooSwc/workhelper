@@ -9,7 +9,7 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 /**
  * \* Created with IntelliJ IDEA.
- * \* User: cxy@acmtc.com
+ * \* User: c.9u@outlook.com
  * \* Date: 2018/8/30
  * \* Time: 18:40
  * \* To change this template use File | Settings | File Templates.
